@@ -1,0 +1,8 @@
+node_modules
+error.log
+combined.log
+tests
+	.github
+	.vscode
+	.gitignore
+	.git
