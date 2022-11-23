@@ -8,6 +8,13 @@ import {
   USER,
 } from "./modules/user/models/user.model";
 
+import {
+  BotModel,
+  BOT,
+  BotDoc,
+  BotInterface,
+} from "./modules/user/models/bots.model";
+
 mongoose
   .connect("mongodb://localhost:27017/trade-bot")
   .then(() => console.log("🚀  Database connection initialized..."))
@@ -21,18 +28,22 @@ mongoose.connection
 export const db = {
   // Modals
   UserModel,
+  BotModel,
 };
 
 export const namming = {
   USER,
+  BOT,
 };
 
 export {
   // Types
   UserInterface,
+  BotInterface,
 };
 
 export {
   // Docs
   UserDoc,
+  BotDoc,
 };

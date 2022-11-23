@@ -42,3 +42,4 @@ export {
 
 const parentPrefix = "/trade-bot/api/v1";
 const userPrefix = parentPrefix + "/users";
+export const botsPrefix = parentPrefix + "/bots";
