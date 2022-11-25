@@ -1,6 +1,8 @@
 import mongoose, { Schema, Model, Document } from "mongoose";
+import { USER, UserDoc } from "./user.model";
 
 export interface RazorPayInterface {
+  userId: string | UserDoc;
   orderId: string;
   paymentId: string;
   signature: string;
@@ -11,6 +13,7 @@ export interface RazorPayInterface {
 export interface RazorpayDoc extends Document, RazorPayInterface {}
 
 const razorpaySchema = new Schema({
+  userId: { type: Schema.Types.ObjectId, ref: USER },
   orderId: { type: Schema.Types.String },
   paymentId: { type: Schema.Types.String },
   signature: { type: Schema.Types.String },

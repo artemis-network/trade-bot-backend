@@ -7,6 +7,7 @@ export const bots = [
     exchange: Exchange.BINANCE,
     status: true,
     market: Market.FUTURES,
+    coin: "ADA",
   },
   {
     name: "XRP Bot",
@@ -14,6 +15,7 @@ export const bots = [
     exchange: Exchange.BINANCE,
     status: true,
     market: Market.FUTURES,
+    coin: "XRP",
   },
   {
     name: "LINK Bot",
@@ -21,6 +23,7 @@ export const bots = [
     exchange: Exchange.KUCOIN,
     status: true,
     market: Market.SPOT,
+    coin: "LINK",
   },
   {
     name: "BCH Bot",
@@ -28,6 +31,7 @@ export const bots = [
     exchange: Exchange.KUCOIN,
     status: true,
     market: Market.FUTURES,
+    coin: "BCH",
   },
   {
     name: "ADA Bot",
@@ -35,6 +39,7 @@ export const bots = [
     exchange: Exchange.KUCOIN,
     status: true,
     market: Market.SPOT,
+    coin: "ADA",
   },
   {
     name: "BNX Bot",
@@ -42,6 +47,7 @@ export const bots = [
     exchange: Exchange.KUCOIN,
     status: true,
     market: Market.SPOT,
+    coin: "BNX",
   },
   {
     name: "DODGE Bot",
@@ -49,5 +55,6 @@ export const bots = [
     exchange: Exchange.BINANCE,
     status: true,
     market: Market.SPOT,
+    coin: "DODGE",
   },
 ];
